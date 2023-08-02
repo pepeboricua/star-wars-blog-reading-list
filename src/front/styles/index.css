@@ -1,3 +1,25 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info{
+    width: 80%;
+    text-align: center;
+}
+
+.about-info-top{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-info-bottom{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+}

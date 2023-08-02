@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const CharacterCard = (props) => {
     return(
@@ -6,8 +7,12 @@ const CharacterCard = (props) => {
   <img src="..." class="card-img-top" alt="..."/>
   <div class="card-body">
     <h5 class="card-title">{props.banana.name}</h5>
-    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac blandit justo, vitae condimentum ligula. Proin ut risus pulvinar, commodo sapien sit amet, ultrices orci. Morbi placerat sit amet velit ac accumsan. Pellentesque blandit mattis imperdiet. Donec aliquam dapibus neque, eu scelerisque libero molestie in.</p>
-    <a href="#" class="btn btn-primary">More Info</a>
+    <p class="card-text">Gender: {props.banana.gender}</p>
+    <p class="card-text">Mass: {props.banana.mass}</p>
+    <p class="card-text">Height: {props.banana.height}</p>
+    <Link to={"/about/people/" + props.id}>
+      <span class="btn btn-primary">More Info</span>
+    </Link>
   </div>
 </div>
     )
