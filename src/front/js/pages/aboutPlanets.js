@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { useParams } from "react-router-dom";
 
-const About = () => {
+const AboutPlanets = () => {
     const {store, actions} = useContext(Context)
     let params=useParams()
     console.log(params)
@@ -41,4 +41,4 @@ const About = () => {
     )
 }
 
-export default About
+export default AboutPlanets
