@@ -24,16 +24,10 @@ const AboutStarships = () => {
                 </div>
                 <div className="about-info-bottom">
                     <p>
-                        Height: {item.height}
+                        Model: {item.model}
                     </p>
                     <p>
-                        Mass: {item.mass}
-                    </p>
-                    <p>
-                        Gender: {item.gender}
-                    </p>
-                    <p>
-                        Skin Color: {item.skin_color}   
+                        Passengers: {item.passengers}   
                     </p>
                 </div>
             </div>

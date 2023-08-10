@@ -24,16 +24,10 @@ const AboutPlanets = () => {
                 </div>
                 <div className="about-info-bottom">
                     <p>
-                        Height: {item.height}
+                        Climate: {item.climate}
                     </p>
                     <p>
-                        Mass: {item.mass}
-                    </p>
-                    <p>
-                        Gender: {item.gender}
-                    </p>
-                    <p>
-                        Skin Color: {item.skin_color}   
+                        Terrain: {item.terrain}   
                     </p>
                 </div>
             </div>

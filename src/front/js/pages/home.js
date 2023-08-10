@@ -10,9 +10,9 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 		console.log(store.people)
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center mt-5 home-container">
 			<h2>CHARACTERS</h2>
-				<div>
+				<div className="card-container">
 					{store.people.map((person, index) => {
 						return(
 							<CharacterCard banana={person} id={index} />
@@ -21,7 +21,7 @@ export const Home = () => {
 				</div>
 		
 			<h2>STARSHIPS</h2>
-				<div>
+				<div className="card-container">
 					{store.starships.map((starship, index) => {
 						return(
 							<StarshipCard apple={starship} id={index} />
@@ -29,7 +29,7 @@ export const Home = () => {
 					})}
 				</div>
 			<h2>PLANETS</h2>
-				<div>
+				<div className="card-container">
 					{store.planets.map((planets, index) => {
 						return(
 							<PlanetCard orange={planets} id={index} />

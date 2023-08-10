@@ -16,9 +16,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 			],
 			people:[],
 			starships:[],
-			planets:[]
+			planets:[],
+			favorites:[]
 		},
 		actions: {
+			addFavorite: (name) => {
+				let favorites = getStore().favorites
+				favorites.push(name)
+				setStore({favorites:favorites})	
+			},
+
+			removeFavorite: (index) => {
+				let favorites = getStore().favorites
+				let filterFavorites = favorites.filter((item,idx) => idx != index)
+				setStore({favorites:filterFavorites})
+			},
+
 			getPeople: () => {
 				fetch("https://swapi.dev/api/people")
 				.then((response) => response.json())

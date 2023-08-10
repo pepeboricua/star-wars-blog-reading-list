@@ -23,3 +23,19 @@
     flex-wrap: wrap;
     border-top: 1px solid black;
 }
+
+.card-container{
+    width: 80%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.card{
+    display: inline-block;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
